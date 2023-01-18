@@ -1,0 +1,108 @@
+1. What is .Net Core 
+	ASP.net Core vs ASP.net framework 
+----------------------------------------------------------------------------
+
+
+		ASp.net framework - creates wonderful websites / RAD - Rapid App develoment
+
+
+			To start a new project with a team of 50 developers
+
+		1. Visual Studio licence - Comes at high cost (40,000) per developer
+		2. VS needs Windows OS - buy windows licence as well 
+		3. Windows Server - for production (high licence)
+
+-----------------This is a huge cost - initially 
+		4. There are lot of challnages with ASP.Net framework - 
+			Responsive web apps, problems with master pages, page lifecycle, security
+			not based on any design pattern...
+		5. Cloud platform 
+---------------------------------------------------------------------------------------
+		Against this 
+			Node
+			Angular, React, bootstrap
+				Cross platform, open source, Free
+	
+			Tools - free - sublime, VIM, etc..
+			You also had Java free
+---------------------------------------------------------------------------------------
+		Microsoft had to completely REWRITE the development framework
+			Cross platform
+			Cloud Support
+			VS Code - free and fanstatic tool
+			Better app development experience compared to Angular, React, etc...
+
+--------------------------------------------------------------------------------------------------
+in next 9 days
+
+		ASP.Net core CLI (create app on any platform with VS Code)
+		ASP.Net Core MVC design pattern 
+		Entity Framework core 
+		oAuth 
+		Consume WebAPI
+
+		You will see middleware, services, configs, routing, etc..
+
+----------------------------------------------------------------------------
+			CLI - Command Line Interface
+			    - Common language interface 		
+			This commands are same for all the OS
+		
+		
+		Comman commands
+			dotnet --version
+			dotnet new mvc --name name_ofthe_app
+				   webapi
+				   console
+			           wpf
+				
+			dotnet build 
+			dotnet test
+			dotnet run
+		
+	All u needed for this is download and install .net core (free) for any OS
+		https://dotnet.microsoft.com/en-us/download
+	make changes to app (VS Code - free) for any OS
+		https://code.visualstudio.com/download
+	dotnet core cli *****
+		https://learn.microsoft.com/en-us/dotnet/core/tools/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
