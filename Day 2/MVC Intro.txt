@@ -1,0 +1,20 @@
+			MVC
+
+		Model(.cs) - Data part of application is programmed here
+			CRUD operations with Database, Collections, excel file, XML file etc
+			Sorting, filtering, grouping
+			Calculation, data validation, execute Stored proc, transactions etc
+			ADO.Net, OLEDB
+			Entity Framework (ORM pattern)
+			Make WebAPI calls here - Server Side using HttpClient class
+		View(.cshtml) - View - UI
+			HTML + CSS + JS + Bootstrap 
+			Razor - Short hand HTML + JS + CSS
+			Make WebAPI calls here - Client Side using Fetch / Axios / Jquery
+		Controller(.cs)
+			Communication between view and model
+			Collect data from model and give it to view
+			Collect data from view and give it to model
+			- Authentication and Authorization
+			- Security, cacahing, state management, encryption, etc...
+			

@@ -1,0 +1,44 @@
+
+
+		Program.cs is the entry point of application 
+
+		Services
+			This is where you configure services
+				like
+				CORS (Cross origin resource shareing)
+				oAuth (allow login from FC, Google etc)
+				 many more
+				DI - dependency Injection
+			
+		Middleware - support for .core features (ISAPI Filters)
+
+		before .net core 5.0
+			there use to be 2 files
+			Startup.cs
+				services
+				middleware
+			program.cs
+				startup.cs was referenced here
+
+-------------------------------------------------------------------------------------------
+			Model - class files 
+				Properties, methods, variables etccc....
+				When you use EF, we call this class files as
+				POCO clases
+			View - 
+				Action View (this is what user gets)
+				Partial View (this is custom control, reuse inside many action view)
+				Layout View (Master Page) - centerlized UI 
+			Controller - 
+					MVC Controller (for MVC APP)
+					API Controller (For REST - WebAPI) 
+
+
+
+
+
+
+
+
+
+
