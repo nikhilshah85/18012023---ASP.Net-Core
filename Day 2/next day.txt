@@ -1,0 +1,4 @@
+Tomorrow
+	a. Communication between Controller and View
+	b. Introduce model in the app 
+		CRUD Operation with InMemory Collection 

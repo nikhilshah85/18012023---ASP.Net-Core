@@ -1,0 +1,75 @@
+﻿
+
+
+
+
+<h1 style="text-align:center"> Product Details </h1>
+
+
+@*<table class="table" >
+
+    @foreach (var item in ViewBag.pList)
+    {
+        <tr>
+            <td> @item.pId </td>
+            <td> @item.pName </td>
+            <td> @item.pCategory </td>
+            <td> @item.pPrice </td>
+            <td> @item.pIsInStock </td>
+            <td> <button class="btn btn-primary"> Add To Cart</button> </td>
+        </tr>
+    }
+</table>*@
+
+ @foreach (var item in ViewBag.pList)
+ {
+    @if (item.pIsInStock)
+    {
+        <div style="background-color:lime;margin:10px;padding:10px;border-radius:20px">
+            <h4>#@item.pId</h4>  
+            <h4>@item.pName </h4>
+            <h4>@item.pCategory</h4>
+            <h4>@item.pPrice</h4>
+            <span>
+                <button class="btn btn-primary"> Add To Cart</button>
+                <button class="btn btn-success"> Add Fav</button>
+                <button class="btn btn-danger"> Add To Wishlist</button>
+            </span>
+        </div>
+    }
+    else
+    {
+        <div style="background-color:red;margin:10px;padding:10px;border-radius:20px;color:white">
+            <h4>#@item.pId</h4>
+            <h4>@item.pName </h4>
+            <h4>@item.pCategory</h4>
+            <h4>@item.pPrice</h4>
+            <h4> Not in stock</h4>
+            <span>
+                <button class="btn btn-primary" disabled> Add To Cart</button>
+                <button class="btn btn-warning"> Notify Me</button>
+                <button class="btn btn-danger"> Add To Wishlist</button>
+            </span>
+        </div>
+    }
+    <hr/>
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

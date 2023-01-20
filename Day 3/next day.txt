@@ -1,0 +1,3 @@
+Monday:
+	Entity Framework Core with .Net Core MVC
+	and perform CRUD operations with sql server database

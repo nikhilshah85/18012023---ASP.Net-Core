@@ -1,0 +1,32 @@
+﻿
+
+
+
+
+<h1> Shopping APP</h1>
+
+<div>
+    <h2> Total Products :  @ViewBag.totalProducts </h2>
+    <h2> App Developer :  @ViewBag.developer </h2>
+    <h2> Is Live  :  @ViewBag.isProjectLive </h2>
+</div>
+
+@*<ul>
+    @foreach (var item in ViewBag.topProducts)
+    {
+        <li> @item </li>
+    }
+</ul>*@
+
+@*<select>
+    @foreach (var item in ViewBag.topProducts)
+    {
+            <option> @item </option>
+    }
+</select>*@
+
+
+@foreach (var item in ViewBag.topProducts)
+{
+  @item <input type="checkbox" value="@item"/>
+}
