@@ -1,3 +1,103 @@
 Monday:
 	Entity Framework Core with .Net Core MVC
 	and perform CRUD operations with sql server database
+
+
+
+		Todays app - 
+	ASP.Net MVC Core app with EF Core on SQL Server
+		Dynamic application for data
+
+
+
+
+
+1. Create a new database on Server, add a table with sample data
+	Note : Table must have a Primary key
+2. Crete a new MVC Application 
+
+3. We wish to use EF Core.
+	EF core is a framework to work with database
+	Based on ORM design pattern, 
+		ORM is open source pattern, globally accepted
+		Object Relational Mapping
+		i.e Each table for backend, will have a class in frontend
+			with properties as Columns and constraints
+
+	EF code is not present in .net core app by default, we need to add it as Nuget packages
+
+	There are packages to be added in sequence
+	Solution Explorer -> Right click -> Manage Nuget package -> Browse
+
+	Microsoft.EntityFrameworkCore.Tools
+	Microsoft.EntityFrameworkCore.Design
+	Microsoft.EntityFrameworkCore
+	Microsoft.EntityFrameworkCore.SqlServer
+	
+
+4. We now need to create the mapping (ORM) - this is created by commands present in
+		Microsoft.EntityFrameworkCore.Tools
+
+	Tool -> Nuget Package manager ->Package Manager Console
+
+	Command
+		Scaffold-DbContext "Connection String" -outputDir Models\EF -Provider Microsoft.EntityFrameworkCore.SqlServer
+
+	Windows Authentication
+	server=(localdb)\MSSQLLocalDB;database=shoppingDB_MVC;integrated security=true
+
+	Server Authentication
+	server=(localdb)\MSSQLLocalDB;database=shoppingDB_MVC;user id=sa;password=pwdgoeshere
+
+
+	Scaffold-DbContext "server=(localdb)\MSSQLLocalDB;database=shoppingDB_MVC;integrated security=true" -OutputDir Models\EF -Provider Microsoft.EntityFrameworkCore.SqlServer
+
+5. Add a new Controller with EF Core, and view, choose a Model class and DBContext class which got created from above step
+
+6. EF Core uses Dependency Injection by default in a controller, we will have to remove it
+
+	Thus in the controller, do 2 steps
+	a. Instantiate the new object of DBContext class (Line 14)
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
