@@ -1,0 +1,34 @@
+
+
+			Dependency Injection
+		This is more to do with 
+			a. Perform of app on server
+			b. Lazy Loading of object
+
+
+	We create a lot of objects, but we never write to code to destroy them
+		Because, we know GC will come and do it for us
+
+		Instead, now the trend is, Runtime, will create the object for you 
+		and destroy it as per your configuration (3 modes for the same)
+
+		Thus, you will not create object of any class in other class
+
+
+	1. Create and destroy object For every new call - PerCall
+		Transcient Method to be used
+		use for dynamic data - eg. StockRate, Temperature
+	2. Create a new object for every user and destroy when user goes - PerSession
+		Scoped Method to be used
+		personal data of user - Banking account
+	3. Crete a new object when server starts and destroy it when server stops - Global
+		SingleTon
+		use for Static data /Common data for every one - eg.Ticket Schedule
+
+
+
+
+
+
+
+

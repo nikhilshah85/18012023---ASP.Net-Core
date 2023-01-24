@@ -1,0 +1,5 @@
+1. Dependency Injection - with demo 
+	a. With Custom Collection 
+	b. With EF Core
+2. Data Annotation - best to use with Core
+	Used for Client Side and Server Side Validation 
