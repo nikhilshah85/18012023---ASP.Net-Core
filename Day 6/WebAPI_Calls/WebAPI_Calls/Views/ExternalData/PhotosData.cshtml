@@ -1,0 +1,33 @@
+﻿
+
+
+
+<script>
+    function getPhotosData()
+    {
+        var url = "https://jsonplaceholder.typicode.com/photos";
+        
+        fetch(url).then( resp => resp.json())
+                  .then( data => {
+                      alert('Got the data');
+
+                      for(var i=0;i<data.length;i++)
+                      {
+                          $("table").append("<tr>" +
+                            "<td>" + data[i].albumId + "</td>" +
+                        "<td>" + data[i].id + "</td>" +
+                        "<td>" + data[i].title + "</td>" +
+                        "<td> <img src='" + data[i].thumbnailUrl + "'/></td>" +
+                          
+                          + "</tr>")
+                      }
+                  })
+                  .catch(err => {
+                      alert('Error');
+                  })
+    }
+</script>
+
+
+<button class="btn btn-warning" onclick="getPhotosData()"> Show Photos</button>
+<table class="table table-stripped"></table>

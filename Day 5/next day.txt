@@ -2,3 +2,6 @@ Tomorrow
 	1. MVC
 	2. EF
 	3. Security - Identity Framework - oAuth
+		Authentication and Authorization
+		oAuth - Facebook and Google login
+		2FA 
